@@ -1,0 +1,55 @@
+.user-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  background-color: $dark-background-color;
+}
+
+.user-menu__button {
+  height: 20px;
+  svg {
+    display: block;
+  }
+}
+
+.user-menu__button--profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 45px;
+  color: $hazy-grey-color;
+  svg {
+    margin-right: 11px;
+  }
+}
+
+.user-menu__button--favorites {
+  margin-right: 24px;
+}
+
+.user-menu__button--profile svg,
+.user-menu__button--favorites svg {
+  //463.52 425.2
+  width: 20px;
+  height: svg-height(20, 463.52, 425.2);
+  fill: $white-color;
+}
+
+.user-menu__button--language {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  color: $white-color;
+
+  svg {
+    top: 10px;
+    right: 10%;
+    display: block;
+    fill: $white-color;
+    width: 9px;
+    height: 5px;
+  }
+}

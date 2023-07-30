@@ -1,0 +1,23 @@
+@use "sass:math";
+@import "settings/all-settings";
+@import "blocks/fonts-gothampro";
+@import "blocks/fonts-montserrat";
+@import "blocks/fonts-raleway";
+
+@import "~normalize.css/normalize.css";
+@import "utils/variables.scss";
+@import "blocks/html";
+
+@import "blocks/section";
+@import "blocks/container";
+
+@import "blocks/hero";
+@import "blocks/categories";
+@import "blocks/features";
+@import "blocks/logo";
+@import "blocks/navigation";
+@import "blocks/page-header";
+@import "blocks/main-menu";
+@import "blocks/user-menu";
+@import "blocks/menu-contacts";
+@import "blocks/menu-socials";

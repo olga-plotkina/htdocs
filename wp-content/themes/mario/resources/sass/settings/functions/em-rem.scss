@@ -1,0 +1,15 @@
+@use 'sass:math';
+
+@function em ($value, $base: 18px, $unit: 1em) {
+	@if not unitless($value) {
+		$value: strip-units($value);
+	}
+	@if not unitless($base) {
+		$base: strip-units($base);
+	}
+	@return math.div($value, $base) * $unit;
+}
+
+@function rem ($value, $base: 18px) {
+	@return em($value, $base, 1rem);
+}

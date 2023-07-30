@@ -1,0 +1,2 @@
+2023-07-28T20:45:41+00:00 CRITICAL Cannot redeclare get_template_name() (previously declared in /Applications/MAMP/htdocs/wp-content/themes/mario/functions.php:188) у /Applications/MAMP/htdocs/wp-content/themes/mario/functions.php доступно 225
+

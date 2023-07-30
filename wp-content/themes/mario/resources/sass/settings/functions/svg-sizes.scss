@@ -1,0 +1,9 @@
+@use 'sass:math';
+
+@function svg-height ($width_need, $width_original, $height_original) {
+	@return math.div($width_need * $height_original, $width_original) + px;
+}
+
+@function svg-width ($height_need, $width_original, $height_original) {
+	@return math.div($width_original * $height_need, $height_original) + px;
+}

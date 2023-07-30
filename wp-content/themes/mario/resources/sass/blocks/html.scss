@@ -1,0 +1,53 @@
+html {
+  font-family: $primary-font, sans-serif;
+  color: $primary-grey-color;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+body {
+  box-sizing: border-box;
+  min-width: 320px;
+  line-height: normal;
+}
+
+*, // sass-lint:disable-line no-universal-selectors
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+svg {
+  use {
+    pointer-events: none;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}

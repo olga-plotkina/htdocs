@@ -1,0 +1,21 @@
+@use 'sass:math';
+
+@function vw ($value, $base: 19.2px) {
+	@if not unitless($value) {
+		$value: strip-units($value);
+	}
+	@if not unitless($base) {
+		$base: strip-units($base);
+	}
+	@return math.div($value, $base) * 1vw;
+}
+
+@function vh ($value, $base: 10.8px) {
+	@if not unitless($value) {
+		$value: strip-units($value);
+	}
+	@if not unitless($base) {
+		$base: strip-units($base);
+	}
+	@return math.div($value, $base) * 1vh;
+}

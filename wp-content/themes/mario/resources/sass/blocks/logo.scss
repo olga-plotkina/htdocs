@@ -1,0 +1,21 @@
+.logo {
+  width: 100px;
+}
+
+@include for-wide-tablet-up {
+  .logo {
+    width: 150px;
+  }
+}
+
+@include for-desktop-up {
+  .logo {
+    width: 200px;
+  }
+}
+
+@include for-wide-desktop-up {
+  .logo {
+    width: 260px;
+  }
+}

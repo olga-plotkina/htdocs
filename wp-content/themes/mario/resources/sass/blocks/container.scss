@@ -1,0 +1,28 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include for-phone-up {
+    width: 480px;
+  }
+
+  @include for-wide-phone-up {
+    width: 600px;
+  }
+  @include for-tablet-up {
+    width: 768px;
+  }
+
+  @include for-wide-tablet-up {
+    width: 900px;
+  }
+  @include for-desktop-up {
+    width: 1200px;
+  }
+
+  @include for-wide-desktop-up {
+    width: 1400px;
+  }
+}
