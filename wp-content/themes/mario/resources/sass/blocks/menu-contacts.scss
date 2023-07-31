@@ -1,4 +1,48 @@
 .menu-contacts {
   margin-bottom: 40px;
   margin-top: 40px;
+  font-weight: 100;
+  color: $primary-grey-color;
+
+  a {
+    color: $accent-color;
+    text-transform: none;
+  }
+
+  @include for-tablet-up {
+    margin: 0;
+
+    a {
+      color: $secondary-grey-color;
+    }
+
+    a:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.menu-contacts li {
+  @include for-tablet-up {
+    display: none;
+  }
+}
+
+.menu-contacts .menu-contacts__tel {
+  @include for-tablet-up {
+    display: block;
+    font-size: 10px;
+  }
+
+  @include for-desktop-up {
+    font-size: 12px;
+  }
+}
+
+.menu-contacts li:not(:last-child) {
+  margin-bottom: 8px;
+
+  @include for-tablet-up {
+    margin: 0;
+  }
 }

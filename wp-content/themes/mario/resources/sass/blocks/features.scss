@@ -57,3 +57,21 @@
     font-size: 40px;
   }
 }
+
+@include for-wide-tablet-up {
+  .features {
+    grid-template-columns: repeat(auto-fill, 260px);
+  }
+}
+
+@include for-desktop-up {
+  .features {
+    grid-template-columns: repeat(auto-fill, 220px);
+  }
+}
+
+@include for-wide-desktop-up {
+  .features {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+}

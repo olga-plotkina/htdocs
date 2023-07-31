@@ -47,7 +47,7 @@
 		<div class="container">
 
 			<nav id="site-navigation" class="navigation">
-				<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo__img" src="/wp-content/themes/mario/resources/img/logo/logo-mario-white.png" width="265px"> </a>
+				<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo__img" src="/wp-content/themes/mario/resources/img/logo/logo-mario-white.png" > </a>
 				<button 
 					type="button"
             		class="navigation__button"
@@ -58,29 +58,44 @@
 							<use class="navigation__icon-menu" href="/wp-content/themes/mario/assets/sprite.svg#mobile-icon-burger"></use>
             			</svg>
 				</button>
+				<div class="user-menu">
+
+					<button type="button" class="user-menu__button user-menu__button--search">
+						<svg class="user-menu__search-icon" aria-label="Пошук">
+							<use href="/wp-content/themes/mario/assets/sprite.svg#search"></use>
+						</svg>
+					</button>
+					<a class="user-menu__button user-menu__button--profile">
+						<svg class="user-menu__profile-icon">
+							<use href="/wp-content/themes/mario/assets/sprite.svg#office"></use>
+						</svg>
+						Кабінет
+					</a>
+					<a class="user-menu__button user-menu__button--favorites">
+						<svg class="user-menu__favorites-icon"  aria-label="Вподобані">
+							<use href="/wp-content/themes/mario/assets/sprite.svg#like-inactive"></use>
+						</svg>
+					</a>
+					<a class="user-menu__button user-menu__button--cart">
+						<svg class="user-menu__cart-icon" aria-label="Кошик">
+							<use href="/wp-content/themes/mario/assets/sprite.svg#cart"></use>
+						</svg>
+					</a>
+					<button 
+						type="button"
+						class="user-menu__button user-menu__button--language">
+							<svg class="user-menu__language-arrow-icon">
+								<use href="/wp-content/themes/mario/assets/sprite.svg#arrow"></use>
+							</svg>
+							UA
+					</button>
+				</div>
+				
+				
+				
+				
 				<div class="navigation__container" id="primary-menu" data-menu>
 					<div class="navigation__menu-wrap">
-						<div class="user-menu">
-							<a class="user-menu__button user-menu__button--profile">
-								<svg class="user-menu__profile-icon">
-									<use href="/wp-content/themes/mario/assets/sprite.svg#office"></use>
-								</svg>
-								Кабінет
-							</a>
-							<a class="user-menu__button user-menu__button--favorites">
-									<svg class="user-menu__favorites-icon"  aria-label="Вподобані">
-										<use href="/wp-content/themes/mario/assets/sprite.svg#like-inactive"></use>
-									</svg>
-							</a>
-							<button 
-								type="button"
-								class="user-menu__button user-menu__button--language">
-									<svg class="user-menu__language-arrow-icon">
-										<use href="/wp-content/themes/mario/assets/sprite.svg#arrow-language"></use>
-									</svg>
-									UA
-							</button>
-						</div>
 						<div class="main-menu">
 							<div class="main-menu__links">
 								<?php
@@ -91,7 +106,39 @@
 								)
 								);
 								?>
-							<div>
+						</div>
+						<div class="menu-contacts">
+							<ul class="list">
+								<li class="menu-contacts__tel">
+									<a href="tel:+380737011707">
+										+38 (073) 70-11-707
+									</a>
+								</li>
+								<li class="menu-contacts__tel">
+									<a href="tel:+380677011707">
+										+38 (067) 70-11-707
+									</a>
+								</li>
+								<li>
+									Пн.-Пт.: 9.00-19.00
+								</li>
+								<li>
+									Сб: 10.00-16.00
+								</li>
+								<li>
+									<a href="mailto:info@mario.in.ua">
+										info@mario.in.ua
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-socials">
+							<ul>
+								<li><a href="">Viber</a></li>
+								<li><a href="">Telegram</a></li>
+								<li><a href="">Whatsapp</a></li>
+							</ul>
+						</div>
 							<button
 							type="button"
 							class="navigation__close-button"

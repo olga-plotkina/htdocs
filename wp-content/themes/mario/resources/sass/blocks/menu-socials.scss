@@ -1,0 +1,13 @@
+.menu-socials ul {
+  display: flex;
+  color: $accent-color;
+  font-size: 12px;
+  font-weight: 100;
+  gap: 11px;
+}
+
+.menu-socials {
+  @include for-tablet-up {
+    display: none;
+  }
+}

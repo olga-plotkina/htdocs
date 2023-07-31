@@ -1,0 +1,32 @@
+.footer-contacts {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-weight: 100;
+  color: $primary-grey-color;
+
+  li {
+    font-size: 16px;
+  }
+  a {
+    color: $accent-color;
+    text-transform: none;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@include for-tablet-up {
+  .footer-contacts {
+    margin: 0;
+
+    li {
+      font-size: 14px;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 4;
+    }
+  }
+}

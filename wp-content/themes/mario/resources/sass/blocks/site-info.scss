@@ -1,0 +1,37 @@
+.site-info a {
+  display: block;
+}
+
+.site-info .link-more {
+  color: $light-grey-color;
+}
+
+.site-info p {
+  margin-bottom: 20px;
+}
+
+.site-info {
+  font-size: 12px;
+  line-height: 1.714;
+  text-align: left;
+
+  @include for-phone-up {
+    font-size: 14px;
+  }
+
+  @include for-wide-tablet-up {
+    font-size: 14px;
+  }
+
+  @include for-desktop-up {
+    font-size: 14px;
+  }
+
+  @include for-wide-desktop-up {
+    font-size: 14px;
+  }
+}
+
+.site-info span {
+  color: $accent-color;
+}
